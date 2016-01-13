@@ -43,5 +43,6 @@ lb config noauto \
 	--win32-loader false \
 	--debug \
 	--verbose \
+	--debootstrap-options "--variant=minbase"
 	--bootappend-live "boot=live config components file=/preseed.cfg quiet splash autologin nouveau.modeset=0 radeon.modeset=0" \
 "${@}"

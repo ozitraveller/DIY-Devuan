@@ -2,21 +2,16 @@
 # Base
 #####################
 xorg
-# xserver-xorg
 
 sysvinit-core
 
-# systemd 
-# systemd-sysv
-# libpam-systemd
-# systemd-ui
-# dh-systemd
 accountsservice
 upower
 
 # slim
 lightdm
 wicd
+# netman-gtk3
 
 xfce4-power-manager
 

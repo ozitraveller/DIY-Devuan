@@ -73,8 +73,7 @@ purge(){
 			sudo lb clean --purge
 			cd ..
 		fi
-	fi	
-	
+	fi
 }
 
 setup(){
