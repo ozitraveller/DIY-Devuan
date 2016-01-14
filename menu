@@ -144,10 +144,12 @@ update(){
 }
 
 main(){
+	
+	
 	clear
 	echo -e "\t~~~~~~~~~~~~~~~~~~~~~"	
 	echo -e "\t M A I N - M E N U"
-	echo -e "\t~~~~~~~~~~~~~~~~~~~~~"
+	echo -e "\t~~~~~~~~~~~~~~~~~~~~~\t\tBuild version ["$_VERSION"]"	
 	echo " "
 	echo -e "\ts. Setup"
 	echo -e "\tr. Remove"
