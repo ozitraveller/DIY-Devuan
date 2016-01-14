@@ -15,6 +15,7 @@ MIRROR_BINARY="http://au.mirror.devuan.org/merged/"
 # MIRROR_BINARY="http://188.165.204.61/repo/dists/jessie/main/"
 
 #	--build-with-chroot false \
+# 	--debootstrap-options "--variant=minbase"
 
 lb config noauto \
 	--mode devuan \
@@ -43,6 +44,5 @@ lb config noauto \
 	--win32-loader false \
 	--debug \
 	--verbose \
-	--debootstrap-options "--variant=minbase"
 	--bootappend-live "boot=live config components file=/preseed.cfg quiet splash autologin nouveau.modeset=0 radeon.modeset=0" \
 "${@}"

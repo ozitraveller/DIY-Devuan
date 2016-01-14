@@ -8,7 +8,6 @@ sysvinit-core
 accountsservice
 upower
 
-# slim
 lightdm
 wicd
 # netman-gtk3
@@ -89,7 +88,7 @@ usbutils
 # post install locale purge #
 localepurge
 
-# xserver-xorg-video-all
+xserver-xorg-video-all
 
 # intel-microcode
 # amd64-microcode
