@@ -113,3 +113,6 @@ xserver-xorg-video-all
 # mobile-broadband-provider-info 
 # wireless-tools
 
+
+# python-imaging
+# python-pil

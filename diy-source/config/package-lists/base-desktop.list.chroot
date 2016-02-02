@@ -29,7 +29,7 @@ bum
 hdparm 
 disk-manager 
 ufw 
-# gparted  
+gparted  
 htop
 gksu 
 gdebi 
@@ -45,12 +45,13 @@ vlc
 
 iceweasel
 
+clipit
 mirage
 conky-all 
 file-roller
 xarchiver
 gnome-calculator 
-transmission-gtk 
+# transmission-gtk 
 
 scrot 
  

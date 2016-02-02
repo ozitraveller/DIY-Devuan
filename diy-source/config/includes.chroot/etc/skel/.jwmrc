@@ -20,14 +20,17 @@
       </Menu>
       <Separator/>
       <Menu icon="folder.png" label="Accessories">
-           <Program label="Calculator" confirm="false">/usr/bin/gnome-calculator</Program>
-  		   <Program label="Screenshot" confirm="false">/usr/bin/xfce4-screenshooter</Program>
-      </Menu>
+          <Program label="Calculator" confirm="false">/usr/bin/gnome-calculator</Program>
+  		  <Program label="Screenshot" confirm="false">/usr/bin/xfce4-screenshooter</Program>
+  		  <Program label="Leafpad" confirm="false">editor</Program>
+		  <Program icon="terminal.png" label="Terminal">x-terminal-emulator</Program>
+		  <Program icon="thunar.png" label="Thunar">x-file-manager</Program>
+	  </Menu>
       <Menu icon="folder.png" label="Graphics">
           <Program label="Mirage" confirm="false">mirage</Program>
       </Menu>      
       <Menu icon="folder.png" label="Internet">
-           <Program icon="firefox.png" label="Web Browser">x-www-browser</Program>
+           <Program icon="firefox.png" label="Iceweasel">x-www-browser</Program>
       </Menu>  
       <Menu icon="folder.png" label="Multimedia">
           <Program label="VLC media player" confirm="false">/usr/bin/vlc</Program>
@@ -37,16 +40,18 @@
           <Program label="Pdf Viewer" confirm="false">/usr/bin/xpdf</Program>
       </Menu>      
       <Menu icon="folder.png" label="System">
-          <Program label="System Information" confirm="false">/usr/bin/hardinfo</Program>
+          <Program label="Default Applications" confirm="false">gksudo /usr/bin/galternatives</Program>
           <Program label="Disk Manager" confirm="false">gksudo /usr/sbin/disk-manager</Program>
           <Program label="Disk Partitioner" confirm="false">gksudo /usr/sbin/gparted</Program>
-          <Program icon="programs.png" label="Synaptic" confirm="false">gksu synaptic</Program>
-          <Program label="Terminal as root" confirm="false">gksudo /usr/bin/x-terminal-emulator</Program>
+          <Program label="Root Terminal" confirm="false">gksudo x-terminal-emulator</Program>
+          <Program label="Root File Manager" confirm="false">gksudo x-file-manager</Program>
+          <Program label="System Information" confirm="false">/usr/bin/hardinfo</Program>
+          <Program icon="programs.png" label="Synaptic Package Manager" confirm="false">gksu /usr/sbin/synaptic</Program>
       </Menu>
       <Separator/>
       <Restart label="Restart" icon="restart.png"/>
       <Exit label="Exit" confirm="true" icon="quit.png"/>
-      <Program icon="exit.png" label="Log Out">/usr/bin/diy-exit</Program>
+      <Program icon="exit.png" label="Log Out">/usr/bin/oblogout</Program>
    </RootMenu>
 
 <!--
@@ -240,7 +245,7 @@
    <Key mask="4" key="e">exec:editor</Key>
    <Key mask="4" key="m">exec:/usr/bin/vlc</Key>
    <Key mask="4" key="l">exec:/usr/bin/i3lock -n -p default --color=000000</Key>
-   <Key mask="4" key="x">exec:/usr/bin/diy-exit</Key>
+   <Key mask="4" key="x">exec:/usr/bin/oblogout</Key>
    <Key mask="A" key="F3">exec:dmenu_run</Key>
 
 </JWM>

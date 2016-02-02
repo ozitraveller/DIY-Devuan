@@ -8,13 +8,13 @@
 ## under certain conditions; see COPYING for details.
 
 
-set -e
+#set -e
 
-echo DIY-LIVE-Hook: "$0"
-echo ""
+#echo DIY-LIVE-Hook: "$0"
+#echo ""
 
-cd /usr/share/themes
-rm -rf Greybird
-wget -c https://github.com/shimmerproject/Greybird/archive/master.zip
-unzip -q master.zip
-mv Greybird-master Greybird
+#cd /usr/share/themes
+#rm -rf Greybird
+#wget -c https://github.com/shimmerproject/Greybird/archive/master.zip
+#unzip -q master.zip
+#mv Greybird-master Greybird
