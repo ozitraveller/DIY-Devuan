@@ -50,8 +50,9 @@ rpl
 dosfstools
 gpart
 mtools
-# ntfs-3g
+ntfs-3g
 xfsprogs 
+btrfs-tools
 reiserfsprogs 
 reiser4progs 
 jfsutils 
