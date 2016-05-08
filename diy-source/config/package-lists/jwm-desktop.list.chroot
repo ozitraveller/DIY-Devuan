@@ -1,7 +1,6 @@
 jwm
 dmenu
 
-
 hsetroot
 # nitrogen
 feh
@@ -17,7 +16,7 @@ xpdf
 
 # pcmanfm
 spacefm
-isof
+lsof
 udevil
 
 galternatives

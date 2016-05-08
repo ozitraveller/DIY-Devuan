@@ -25,7 +25,8 @@
   		  <Program label="Screenshot" confirm="false">/usr/bin/xfce4-screenshooter</Program>
   		  <Program label="Leafpad" confirm="false">editor</Program>
 		  <Program icon="terminal.png" label="Terminal">x-terminal-emulator</Program>
-		  <Program icon="thunar.png" label="Pcmanfm">x-file-manager</Program>
+		  <Program label="SpaceFM">x-file-manager</Program>
+		  <Program label="SpaceFM File Search">spacefm --find-files %F</Program>
 	  </Menu>
       <Menu icon="folder.png" label="Graphics">
           <Program label="Mirage" confirm="false">mirage</Program>

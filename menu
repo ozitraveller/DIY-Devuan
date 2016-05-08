@@ -118,6 +118,7 @@ update(){
 	rm -rf ./packages.chroot/* 
 	
 	cp ../../$2/config/apt/* ./apt/
+	cp ../../$2/config/archives/* ./archives/
 	cp -r ../../$2/config/bootloaders/* ./bootloaders/
 	cp -r ../../$2/config/includes.installer/* ./includes.installer/
 	cp ../../$2/config/includes.installer/preseed.cfg ./includes.binary/install
