@@ -8,9 +8,8 @@ sysvinit-core
 accountsservice
 upower
 
-lightdm
+slim
 wicd
-# netman-gtk3
 
 xfce4-power-manager
 
@@ -91,9 +90,9 @@ localepurge
 
 xserver-xorg-video-all
 
-intel-microcode
+# intel-microcode
 amd64-microcode
-iucode-tool
+# iucode-tool
 
 zd1211-firmware
 firmware-linux 
@@ -115,3 +114,5 @@ mobile-broadband-provider-info
 wireless-tools
 
 lsb-release
+
+wmctrl

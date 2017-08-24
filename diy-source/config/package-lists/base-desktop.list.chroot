@@ -41,7 +41,8 @@ xfce4-appfinder
 xfburn
 xfce4-screenshooter
 
-smplayer
+# smplayer
+mpv
 
 iceweasel
 
@@ -50,7 +51,7 @@ mirage
 conky-all 
 file-roller
 xarchiver
-gnome-calculator 
+qalculate-gtk
 # transmission-gtk 
 
 scrot 

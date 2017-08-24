@@ -2,21 +2,20 @@ jwm
 dmenu
 
 hsetroot
-# nitrogen
-feh
 
 lxterminal
-# xfce4-mixer
-# compton
 lxrandr
 lxappearance
 gmrun
 leafpad
 xpdf
 
-# pcmanfm
-spacefm
-lsof
+pcmanfm
+libfm-modules
 udevil
+# gvfs-backends
+# gvfs-fuse
+
+yad
 
 galternatives

@@ -2,25 +2,34 @@
 
 set -e
 
-DISTRIBUTION="jessie"
-ARCHITECTURES="amd64"
-LINUX_FLAVOURS="amd64"
-ARCHIVE_AREAS="main"
-SOURCE="false"
-MIRROR_BINARY="http://packages.devuan.org/merged"
+_DISTRIBUTION="jessie"
+_ARCHITECTURES="amd64"
+_LINUX_FLAVOURS="amd64"
+_ARCHIVE_AREAS="main contrib non-free"
+_SOURCE="false"
+_DEVUAN_INSTALLER="live"
+#_DEVUAN_INSTALLER="daily"
+
+# sudo apt-get install apt-cacher-ng
+_MIRROR_BINARY="http://localhost:3142/packages.devuan.org/merged"
+
+# _MIRROR_BINARY="http://packages.devuan.org/merged"
+
+#	--apt-options "--force-yes --yes"
+# 	--apt-source-archives true \
 
 lb config noauto \
 	--mode devuan \
 	--chroot-filesystem squashfs \
 	--distribution "${_DISTRIBUTION}" \
 	--debian-installer-distribution "${_DISTRIBUTION}" \
-	--debian-installer live \
+	--debian-installer "${DEVUAN_INSTALLER}" \
 	--architectures "${_ARCHITECTURES}" \
 	--linux-flavours "${_LINUX_FLAVOURS}" \
 	--apt-recommends false \
 	--apt-secure true \
 	--apt-indices false \
-	--apt-source-archives true \
+	--apt-source-archives false \
 	--archive-areas "${_ARCHIVE_AREAS}" \
 	--parent-mirror-bootstrap "${_MIRROR_BINARY}" \
 	--parent-mirror-binary "${_MIRROR_BINARY}" \
@@ -36,5 +45,6 @@ lb config noauto \
 	--win32-loader false \
 	--debug \
 	--verbose \
+	--source "false" \
 	--bootappend-live "boot=live config components file=/preseed.cfg quiet splash autologin nouveau.modeset=0 radeon.modeset=0" \
 "${@}"
