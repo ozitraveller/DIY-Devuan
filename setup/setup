@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+
+# install the extra build tools
+sudo apt-get install live-manual-pdf xorriso squashfs-tools debootstrap cpio apt-utils
+
+# install basic live build, these are from Debian Stretch and customised for Devuan Ascii
+sudo dpkg -i ./live-tools_20151214+nmu1_all.deb 
+sudo dpkg -i ./live-build_20170213_all.deb
+
+# move the updates for Devuan into place
+mv ./build/* /usr/lib/live/build/
+mv ./functions/* /usr/share/live/build/functions/
+
+# A link is required for ascii, or the build breaks
+cd /usr/share/live/build/data/debian-cd/
+sudo ln -s /usr/share/live/build/data/debian-cd/squeeze/ ascii
+
+exit 0

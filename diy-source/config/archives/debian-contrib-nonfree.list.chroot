@@ -1,4 +1,0 @@
-# This is no longer necessary as Devuan now have contrib non-free
-
-#### Debian Contrib and Non-Free Repositories
-deb http://ftp.us.debian.org/debian/ jessie contrib non-free

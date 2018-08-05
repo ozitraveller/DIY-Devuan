@@ -2,5 +2,5 @@
 
 set -e
 
-apulse firefox-esr
+apulse epiphany-browser
 

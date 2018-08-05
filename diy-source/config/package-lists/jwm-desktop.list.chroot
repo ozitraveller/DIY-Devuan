@@ -1,21 +1,31 @@
 jwm
 dmenu
+dunst
+
+connman
+connman-ui
 
 hsetroot
 
 lxterminal
-lxrandr
+arandr
 lxappearance
-gmrun
+# gmrun
 leafpad
-xpdf
 
-pcmanfm
-libfm-modules
+xpdf
+x11-apps
+
+# pcmanfm
+# libfm-modules
+spacefm
+lsof
 udevil
-# gvfs-backends
-# gvfs-fuse
 
 yad
+
+mpv
+
+xarchiver
 
 galternatives

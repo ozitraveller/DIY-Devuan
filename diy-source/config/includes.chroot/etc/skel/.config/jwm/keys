@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <JWM>
 
+
    <!-- Key bindings -->
    <Key key="Up">up</Key>
    <Key key="Down">down</Key>
@@ -32,5 +33,8 @@
    <Key mask="4" key="l">exec:/usr/bin/i3lock -n -p default --color=000000</Key>
    <Key mask="4" key="x">exec:/usr/bin/diy-logout</Key>
    <Key mask="4" key="d">exec:~/.config/dmenu/dmenu-bind.sh</Key>
+     
+   <Key mask="CS" key="+">exec:~/.config/dmenu/dmenu-bind.sh</Key> 
+   <Key mask="CS" key="j">exec:/usr/bin/touchtoggle.sh</Key>   
 
 </JWM>

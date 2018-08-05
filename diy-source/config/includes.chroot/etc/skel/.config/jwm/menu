@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <JWM>
+	
 
    <!-- The root menu, if this is undefined you will not get a menu. -->
    <!-- Additional RootMenu attributes: onroot, labeled, label -->
    <RootMenu height="15" onroot="123">
+<!--
+		use dmenu instead
       <Program icon="terminal.png" label="Run Program">xfce4-appfinder --collapsed</Program>
       <Separator/>
       <Program icon="terminal.png" label="Command">gmrun</Program>
+-->
       <Program icon="terminal.png" label="Terminal">x-terminal-emulator</Program>
       <Program icon="thunar.png" label="File Manager">x-file-manager</Program>
       <Program icon="firefox.png" label="Web Browser">x-www-browser</Program>
-<!-- installer start -->
-      <Separator/>
-	  <Program label="Install Star" confirm="false">su-to-root -X -c /usr/sbin/debian-installer-launcher</Program>	
-<!-- installer end -->	   
       <Separator/>
       <Menu icon="folder.png" label="Settings">
 		  <Menu icon="folder.png" label="Jwm">
 			<Program label="Edit menu" confirm="false">leafpad ~/.config/jwm/menu</Program>
 			<Program label="Edit tray" confirm="false">leafpad ~/.config/jwm/tray</Program>
-			<Program label="Edit theme" confirm="false">leafpad ~/.config/jwm/theme-arc</Program>
+			<Program label="Edit theme" confirm="false">leafpad ~/.config/jwm/theme-adwaita-dark</Program>
 			<Program label="Edit keys" confirm="false">leafpad ~/.config/jwm/keys</Program>
 			<Program label="Edit preferences" confirm="false">leafpad ~/.config/jwm/preferences</Program>
 			<Program label="Edit groups" confirm="false">leafpad ~/.config/jwm/groups</Program>
@@ -29,25 +29,24 @@
 			<Program label="Restart" confirm="false">/usr/bin/jwm -restart</Program>
 			<Program label="Reload menu" confirm="false">/usr/bin/jwm -reload</Program>
 		  </Menu>
-          <Program label="ARandR Screen Layout Editor" confirm="false">/usr/bin/arandr</Program>
+          <Program label="Display Settings" confirm="false">/usr/bin/arandr</Program>
           <Program label="Appearance" confirm="false">/usr/bin/lxappearance</Program>
-          <Program label="Power Manager" confirm="false">/usr/bin/xfce4-power-manager-settings</Program>
       </Menu>
       <Separator/>
       <Menu icon="folder.png" label="Accessories">
+<!--
 		  <Program label="Archive Manager">/usr/bin/file-roller</Program>
-		  <Program label="Calculator" confirm="false">/usr/bin/qalculate-gtk</Program>
+-->
+		  <Program label="Calculator" confirm="false">/usr/bin/xcalc</Program>
           <Program label="Leafpad" confirm="false">editor</Program>
 		  <Program label="Terminal">x-terminal-emulator</Program>
-		  <Program label="PcmanFm">x-file-manager</Program>
+		  <Program label="Spacefm">x-file-manager</Program>
 		  <Program label="Xarchiver">/usr/bin/xarchiver</Program>
 		  <Program label="Xterm">/usr/bin/xterm</Program>
       </Menu>
       <Menu icon="folder.png" label="Graphics">
-          <Program label="Mirage" confirm="false">mirage</Program>
+          <Program label="Mirage" confirm="false">/usr/bin/mirage</Program>
 		  <Menu icon="folder.png" label="Take Screenshot">
-			  <Program label="Screenshooter" confirm="false">/usr/bin/xfce4-screenshooter</Program>
-			  <Separator/>
 			  <Program label="Now" confirm="false">scrot '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp; mirage ~/images/$f'</Program>
 			  <Program label="In 5 Seconds..." confirm="false">scrot -d 5 '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp; mirage ~/images/$f'</Program>
 			  <Program label="In 10 Seconds..." confirm="false">scrot -d 10 '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp; mirage ~/images/$f'</Program>
@@ -55,13 +54,11 @@
 		  </Menu>
       </Menu>
       <Menu icon="folder.png" label="Internet">
-          <Program icon="firefox.png" label="Iceweasel">x-www-browser</Program>
-          <Program label="Wicd Network Manager">/usr/bin/wicd-gtk --no-tray</Program>
+          <Program icon="epiphany.png" label="Epiphany">x-www-browser</Program>
       </Menu>
       <Menu icon="folder.png" label="Multimedia">
           <Program label="Mpv" confirm="false">x-media-player</Program>
 		  <Program label="Audio Mixer" confirm="false">x-terminal-emulator -t 'Audio Mixer' -e /usr/bin/alsamixer</Program>
-		  <Program label="Xfburn" confirm="false">/usr/bin/xfburn</Program>
       </Menu>
       <Menu icon="folder.png" label="Office">
           <Program label="Pdf Viewer" confirm="false">/usr/bin/xpdf</Program>

@@ -3,22 +3,43 @@
 #####################
 xorg
 
-sysvinit-core
+# sysvinit-core
 
 accountsservice
 upower
 
 slim
-wicd
+# connman
+# connman-ui
+# connman-gtk
+# connman-vpn
+# wicd
+# network-manager-gnome
+# network-manager-openvpn-gnome
+# network-manager-pptp-gnome
+# network-manager-vpnc-gnome
+# network-manager-openconnect-gnome
+# nm-applet
+## vpnc 
+## vpnc-scripts
 
-xfce4-power-manager
+# fast reboots
+kexec-tools
+gettext-base
+
+# xfce4-power-manager
 
 pm-utils
 xdg-user-dirs
 xdg-utils
-# desktop-base
 alsa-utils
-alsa-base
+# alsa-base
+apulse
+# pulseaudio
+# pulseaudio-module-x11
+# rtkit
+
+apt-listchanges
 
 tasksel
 
@@ -26,23 +47,35 @@ gamin
 cpufrequtils
 tzdata
 ntp
+# fslint
 
-zip
+unrar
+unace
+unalz
 unzip
-p7zip-full
+lzop
+rzip
+zip
+xz-utils
+arj
+bzip2
+gzip
+# p7zip-full
 # p7zip-rar
-# unrar
 
 # whois 
 rpl
 # fuse-utils  fusesmb
 # gnome-disk-utility
+
 # gigolo
+# fusesmb
 # gvfs
 # gvfs-bin
 # gvfs-common
 # gvfs-fuse
 # gvfs-backends
+
 # avahi-utils
 # udisks-glue
 
@@ -50,7 +83,9 @@ dosfstools
 gpart
 mtools
 ntfs-3g
-xfsprogs 
+# e2fsprogs
+xfsprogs
+xfsdump 
 btrfs-tools
 reiserfsprogs 
 reiser4progs 
@@ -59,25 +94,24 @@ jfsutils
 # dmraid
 # dmsetup
 
-debian-keyring 
-devuan-keyring 
-libxss1 
-logrotate 
-# libdvdcss 
-mpg321 
-libgstreamer-perl 
-gstreamer1.0-plugins-base 
+# debian-keyring
+libxss1
+logrotate
+# debfoster
+# libdvdcss
+mpg321
+# libgstreamer-perl
+gstreamer1.0-plugins-base
 gstreamer1.0-plugins-good 
-gstreamer1.0-plugins-bad 
-gstreamer1.0-plugins-ugly 
-# gstreamer0.10-ffmpeg 
-libgstreamer-interfaces-perl
+gstreamer1.0-plugins-bad
+gstreamer1.0-plugins-ugly
+# gstreamer0.10-ffmpeg
+# libgstreamer-interfaces-perl
 gstreamer1.0-alsa
 gir1.2-gst-plugins-base-1.0
 gir1.2-gstreamer-1.0
 
 ca-certificates
-isc-dhcp-common
 hwdata
 
 policykit-1
@@ -90,11 +124,12 @@ localepurge
 
 xserver-xorg-video-all
 
-# intel-microcode
+intel-microcode
 amd64-microcode
-# iucode-tool
+iucode-tool
 
-zd1211-firmware
+# zd1211-firmware
+firmware-zd1211
 firmware-linux 
 firmware-linux-nonfree 
 firmware-netxen
@@ -111,8 +146,26 @@ firmware-b43-installer
 firmware-b43legacy-installer 
 b43-fwcutter 
 mobile-broadband-provider-info 
+
+# tool for configuring Linux wireless devices
+iw
 wireless-tools
 
 lsb-release
 
+# discover
+# discover-data
+# lshw
+
+
 wmctrl
+
+
+setnet
+wpasupplicant
+net-tools
+iputils-ping
+bind9-host
+traceroute
+
+apt-transport-https

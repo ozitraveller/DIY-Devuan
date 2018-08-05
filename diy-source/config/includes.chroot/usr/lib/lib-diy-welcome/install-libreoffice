@@ -4,7 +4,7 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
 
   INSTALL LibreOffice
   -------------------
-  By default, Star comes preinstalled with some lightweight Office
+  By default, DIY comes preinstalled with some lightweight Office
   applications, AbiWord and Gnumeric. Would you like to install the more
   feature rich office suite, LibreOffice? If you choose to do this, the 
   following package will be installed:
